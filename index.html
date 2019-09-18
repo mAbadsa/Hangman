@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <style>
+        body {
+            background-color: #952515;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 940px;
+        }
+
+        .container h1 {
+            color: #752695;
+            background-color: #252525;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container div {
+            min-height: 80px;
+            max-height: 80px;
+            text-align: center;
+            padding-top: 15px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .container .puzzle {
+            background-color: crimson;
+            width: 40%;
+        }
+
+        .container .guess {
+            background-color: chocolate;
+            width: 40%;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .status-box {
+            margin: 0 auto;
+            width: 20%;
+            padding: 15px;
+            font-size: 22px;
+            color: #fff;
+            background-color: #252525;
+            box-sizing: border-box;
+        }
+        .status-box p {
+            display: inline;
+        }
+        .message {
+            width: 100%;
+            background-color: green;
+            min-height: 50px;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 22px;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hangman Puzzle</h1>
+        <div class="puzzle">
+            <label for="display-puzzle">Puzzle</label>
+            <h3 id="display-puzzle"></h3>
+        </div>
+        <div class="status-box"><p id="status">Playing</p></div>
+        <div class="guess">
+            <label for="display-guess">Guesses</label>
+            <h3 id="display-guess"></h3>
+        </div>
+        <div class="message">
+            <p id="ststus-msg">Playing...</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <script src="hangman.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
