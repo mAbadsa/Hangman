@@ -4,7 +4,7 @@
 Simple project for training on JavaScript
 
 ****
-###In this project you will learn about
+### In this project you will learn about
 
   * Oop in JavaScript
     * Prototype
@@ -15,9 +15,9 @@ Simple project for training on JavaScript
 
 --------
 
-To run code you must have Download NodeJs in you PC Click this [NodeJs](https://nodejs.org/en/ "https://nodejs.org/en/")
-Clone this repository or download zip file.
-Write this command
+To run code you must have Download NodeJs in you PC Click this [NodeJs](https://nodejs.org/en/ "https://nodejs.org/en/")    
+Clone this repository or download zip file.    
+Write this command.    
 ```
 node app.js
 ```
