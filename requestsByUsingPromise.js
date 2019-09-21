@@ -4,10 +4,8 @@ const getPuzzle = wordCount => {
         request.addEventListener('readystatechange', (e) => {
             if (e.target.readyState === 4 && e.target.status === 200) {
                 const data = JSON.parse(e.target.responseText);
-                // callback(null, data.puzzle);
                 resolve(data.puzzle);
             } else if (e.target.readyState === 4) {
-                // callback("An error has been occurred", null);
                 reject("An error has been occurred")
             }
         })
