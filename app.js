@@ -19,7 +19,7 @@ window.addEventListener('keypress', e => {
     ststusMsg.textContent = hangman1.statusMessage;
 })
 
-const puzzle = getPuzzle((err, puzzle) => {
+const puzzle = getPuzzle('1', (err, puzzle) => {
     if(err) {
         // throw new Error('Error!!!');
         console.log(err);
@@ -27,3 +27,6 @@ const puzzle = getPuzzle((err, puzzle) => {
         console.log(puzzle)
     }
 });
+
+
+// getPuzzleSync();
