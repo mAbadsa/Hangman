@@ -28,11 +28,17 @@ window.addEventListener('keypress', e => {
 //     }
 // });
 
-const puzzle = getPuzzle('1')
-.then((puzzle) => {
-    console.log(puzzle);
-}).catch((err) => {
+// const puzzle = getPuzzle('1')
+// .then((puzzle) => {
+//     console.log(puzzle);
+// }).catch((err) => {
+//     console.log("Error :", err);
+// })
+
+const puzzle = getPuzzle('1').then(data => {
+    console.log(JSON.stringify(data.puzzle));
+}).catch(err => {
     console.log("Error :", err);
-})
+});
 
 // getPuzzleSync();
