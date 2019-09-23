@@ -12,21 +12,19 @@ let hangman1;
 window.addEventListener('keypress', e => {
     const guess = String.fromCharCode(e.charCode);
     hangman1.makeGusses(guess);
-    guessDisplay.textContent = hangman1.remainingGuesses;
-    puzzleDisplay.textContent = hangman1.puzzle;
-    console.log(hangman1.status)
-    statusEl.textContent = hangman1.status;
-    ststusMsg.textContent = hangman1.statusMessage;
+    render();
 })
 
 const render = () => {
     guessDisplay.textContent = hangman1.remainingGuesses;
     puzzleDisplay.textContent = hangman1.puzzle;
+    statusEl.textContent = hangman1.status;
+    ststusMsg.textContent = hangman1.statusMessage;
 }
 
 const startGame = async () => {
     const puzzle = await getPuzzle('1');
-    hangman1 = new Hangman(puzzle, 3);
+    hangman1 = new Hangman(puzzle, 5);
     render();
 }
 
