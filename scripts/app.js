@@ -5,10 +5,6 @@ const ststusMsg = document.querySelector('#ststus-msg');
 const reset = document.querySelector('#reset');
 let hangman1;
 
-// guessDisplay.textContent = hangman1.remainingGuesses;
-// puzzleDisplay.textContent = hangman1.puzzle;
-// console.log(hangman1.status)
-
 window.addEventListener('keypress', e => {
     const guess = String.fromCharCode(e.charCode);
     hangman1.makeGusses(guess);
